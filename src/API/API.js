@@ -23,4 +23,7 @@ class NoteService{
         return axios.get(BASE_API_URL+"/getByTitle/"+name)
     }
 }
-export default new NoteService();
+
+const API = new NoteService();
+export default API;
+

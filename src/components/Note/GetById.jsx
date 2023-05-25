@@ -5,7 +5,7 @@ import API from '../../API/API';
 const GetById = () => {
     const [note, setNote] = useState([]);
     const {id} = useParams();
-    useEffect(() => {
+    useEffect((dat) => {
         API.getById(id)
             .then((res) => {
                 setNote(res.data)

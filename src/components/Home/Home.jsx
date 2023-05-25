@@ -3,7 +3,7 @@ import API from '../../API/API';
 
 const Home = () => {
     const [note, setNote] = useState([]);
-    useEffect(() => {
+    useEffect((dat) => {
         API.getAll()
             .then((res) => {
                 setNote(res.data)
