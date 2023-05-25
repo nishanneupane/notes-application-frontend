@@ -28,7 +28,7 @@ const GetById = () => {
                                 <h5 className="card-title" style={{ fontWeight: "600", paddingBottom: "20px", fontStyle: "normal" }}>{note.noteTitle}</h5>
 
                                 <p className="card-text">{note.noteDescription}</p>
-                                <a href="https://jittery-idea-production.up.railway.app/" className="btn btn-primary">Get More</a>
+                                <button className="btn btn-primary">Get More</button>
                             </div>
                             <div className="card-footer text-muted">
                                 {note.createdDate}
