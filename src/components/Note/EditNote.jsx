@@ -31,7 +31,7 @@ const EditNote = () => {
     return (
         <div className='m-auto mt-5 shadow rounded-sm p-4'
             style={{
-                width: "50%",
+                width: "80%",
                 marginTop: "23rem",
                 backgroundColor: "whitesmoke"
 
