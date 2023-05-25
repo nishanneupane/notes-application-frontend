@@ -5,14 +5,16 @@ import API from '../../API/API';
 const GetById = () => {
     const [note, setNote] = useState([]);
     const {id} = useParams();
-    useEffect((dat) => {
+    useEffect(() => {
         API.getById(id)
             .then((res) => {
                 setNote(res.data)
-            }).catch(err => {
+            })
+            .catch(err => {
                 console.log(err)
             })
-    },[])
+    }, [id])
+    
 
     return (
         <div>
