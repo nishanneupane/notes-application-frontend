@@ -25,7 +25,7 @@ const Home = () => {
                                 <h5 className="card-title" style={{fontWeight:"600",paddingBottom:"20px",fontStyle:"normal"}}>{item.noteTitle}</h5>
                                 
                                 <p className="card-text">{item.noteDescription}</p>
-                                <a href="https://jittery-idea-production.up.railway.app/" className="btn btn-primary">Get More</a>
+                                <a href={item.url} className="btn btn-primary">Get More</a>
                             </div>
                             <div className="card-footer text-muted">
                                 {item.createdDate}

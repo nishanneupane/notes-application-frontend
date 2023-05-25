@@ -16,7 +16,8 @@ const EditNote = () => {
         API.updateNote(note,id.id).then((res) => {
             setNote({
                 noteTitle: "",
-                noteDescription: ""
+                noteDescription: "",
+                url:""
             })
             navigate("/")
         }).catch((err) => {
@@ -46,6 +47,10 @@ const EditNote = () => {
                 <div className="form-group mt-4">
                     <label for="description">Note Desctiption</label>
                     <textarea type="text" className="form-control" id="description" placeholder="Enter the Note in a very simple words"  value={note.noteDescription} name='noteDescription' onChange={(e)=>handleChange(e)}/>
+                </div>
+                <div className="form-group mt-4">
+                    <label for="url">Url</label>
+                    <textarea type="text" className="form-control" id="url" placeholder="Enter url to explain more"  value={note.url} name='url' onChange={(e)=>handleChange(e)}/>
                 </div>
                 <button type="submit" className="btn btn-primary mt-5 px-3">Edit Note</button>
             </form>
